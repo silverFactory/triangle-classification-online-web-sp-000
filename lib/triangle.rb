@@ -22,8 +22,8 @@ class Triangle
       false
     elsif @@sides.detect{|s| s.negative?} != nil
       false
-    # elsif @@sides[0] + @@sides[1] > @@sides[2] && @@sides[0] + @@sides[2] > @@sides[1] && @@sides[1] + @@sides[2] > @@sides[0]
-    #   false
+     elsif @@sides[0] + @@sides[1] > @@sides[2] && @@sides[0] + @@sides[2] > @@sides[1] && @@sides[1] + @@sides[2] > @@sides[0]
+       false
     else
       true
     end

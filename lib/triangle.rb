@@ -5,12 +5,12 @@ class Triangle
   end
   def kind
     s_sides = @@sides.sort
-    if s_sides[0] == s_sides [1] && s_sides[0] == s_sides[2]
+    if s_sides[0] == s_sides[1] && s_sides[0] == s_sides[2]
       :equilateral
-    elsif
-
+    elsif s_sides[0] == s_sides[1]
+      :isosceles
     else
-
+      :scalene
     end
   end
 end

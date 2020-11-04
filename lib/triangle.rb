@@ -5,9 +5,9 @@ class Triangle
   end
   def kind
     s_sides = @@sides.sort
-    # if !valid_triangle?
-    #   raise TriangleError
-    # else
+     if valid_triangle? != true
+       raise TriangleError
+     else
       if s_sides[0] == s_sides[1] && s_sides[0] == s_sides[2]
         :equilateral
       elsif s_sides[0] == s_sides[1] || s_sides[1] == s_sides[2]

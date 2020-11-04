@@ -10,7 +10,7 @@ class Triangle
     # else
       if s_sides[0] == s_sides[1] && s_sides[0] == s_sides[2]
         :equilateral
-      elsif s_sides[0] == s_sides[1]
+      elsif s_sides[0] == s_sides[1] || s_sides[1] == s_sides[2]
         :isosceles
       else
         :scalene

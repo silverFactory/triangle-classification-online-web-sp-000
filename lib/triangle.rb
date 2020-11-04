@@ -18,11 +18,12 @@ class Triangle
     end
   end
   def valid_triangle?
+    s_sides = @@sides.sort
     if @@sides.detect{|s| s == 0} != nil
       false
     elsif @@sides.detect{|s| s.negative?} != nil
       false
-     elsif @@sides[0] + @@sides[1] > @@sides[2] && @@sides[0] + @@sides[2] > @@sides[1] && @@sides[1] + @@sides[2] > @@sides[0]
+    elsif s_sides[0] + s_sides[1] > s_sides[2]
        false
     else
       true

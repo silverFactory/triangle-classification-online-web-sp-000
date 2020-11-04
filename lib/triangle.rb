@@ -15,7 +15,7 @@ class Triangle
       else
         :scalene
       end
-    #end
+    end
   end
   def valid_triangle?
     if @@sides.detect{|s| s == 0}

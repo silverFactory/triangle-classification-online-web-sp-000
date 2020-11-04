@@ -5,12 +5,19 @@ class Triangle
   end
   def kind
     s_sides = @@sides.sort
-    if s_sides[0] == s_sides[1] && s_sides[0] == s_sides[2]
-      :equilateral
-    elsif s_sides[0] == s_sides[1]
-      :isosceles
+    if #not a valid triangle raise custom error
+      #custom error
     else
-      :scalene
+      if s_sides[0] == s_sides[1] && s_sides[0] == s_sides[2]
+        :equilateral
+      elsif s_sides[0] == s_sides[1]
+        :isosceles
+      else
+        :scalene
+      end
     end
+  end
+  class TriangleError < StandardError
+
   end
 end

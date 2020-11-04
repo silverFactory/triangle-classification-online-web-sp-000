@@ -23,8 +23,8 @@ class Triangle
       false
     elsif @@sides.detect{|s| s.negative?} != nil
       false
-    # elsif s_sides[0] + s_sides[1] > s_sides[2]
-    #    false
+    elsif s_sides[0] + s_sides[1] > s_sides[2] != true
+        false
     else
       true
     end

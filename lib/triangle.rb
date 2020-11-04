@@ -5,7 +5,7 @@ class Triangle
   end
   def kind
     s_sides = @@sides.sort
-    if !valid_trianlge?
+    if !valid_triangle?
       raise TriangleError
     else
       if s_sides[0] == s_sides[1] && s_sides[0] == s_sides[2]
